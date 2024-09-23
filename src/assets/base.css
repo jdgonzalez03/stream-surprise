@@ -1,0 +1,17 @@
+/* Colores base inspirados en Kuromi */
+:root {
+  --kuromi-dark-bg: #1e1e1e; /* Fondo oscuro principal */
+  --kuromi-purple: #7c4dff; /* Morado brillante de Kuromi */
+  --kuromi-pink: #ff80ab; /* Rosa para detalles */
+  --kuromi-white: #fefefe; /* Blanco suave */
+  --kuromi-grey: #b0bec5; /* Gris claro para texto */
+  --kuromi-black: #121212; /* Negro intenso */
+  --kuromi-border: #424242; /* Gris oscuro para bordes */
+  --kuromi-hover: #9e47ff; /* Morado más claro para hover */
+  --kuromi-accent: #f48fb1; /* Color de acento (rosado) */
+}
+
+/* Configuración global */
+body {
+  height: 100vh;
+}
