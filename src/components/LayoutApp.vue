@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div>
     <div class="navbar-slot">
       <slot name="navbar"></slot>
     </div>
