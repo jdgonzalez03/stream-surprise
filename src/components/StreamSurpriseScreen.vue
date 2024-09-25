@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid bg-dark">
     <figure>
       <img src="@/assets/img/kuromi.png" alt="Kuromi Logo" />
     </figure>
@@ -31,7 +31,6 @@ div {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--kuromi-dark-bg);
   padding: 10px;
 }
 
