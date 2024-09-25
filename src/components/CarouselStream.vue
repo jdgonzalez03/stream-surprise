@@ -8,7 +8,8 @@ const props = defineProps({
 
 <template>
   <h1 class="carousel-title">Explora nuestras películas y series <span>recomendadas.</span></h1>
-  <!-- TODO: Add loading while image is loading -->
+
+  <!-- TODO: Add loading status while image is loading -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <!-- Imágenes dinámicas con v-for -->
     <div class="carousel-inner">
@@ -61,5 +62,32 @@ const props = defineProps({
   box-shadow: 0 12px 12px -9px var(--kuromi-hover);
 }
 
-/*TODO: Add media Querys for differents sizes screen*/
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel {
+  height: 600px;
+}
+
+.carousel-item img {
+  aspect-ratio: auto;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.15);
+}
+
+/*TODO: Add media querys to differents screen's sizes*/
 </style>
