@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <h1 class="carousel-title">Explora nuestras películas y series <span>recomendadas.</span></h1>
-
+  <!-- TODO: Add loading while image is loading -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <!-- Imágenes dinámicas con v-for -->
     <div class="carousel-inner">
