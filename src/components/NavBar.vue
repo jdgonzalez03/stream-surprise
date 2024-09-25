@@ -55,6 +55,7 @@ a {
 
 a:hover h1 {
   color: var(--kuromi-purple);
+  transform: scale(0.95);
 }
 
 img {
@@ -76,7 +77,7 @@ img {
 }
 
 .get-movie:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .get-movie:active {

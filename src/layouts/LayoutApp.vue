@@ -17,3 +17,18 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+.carousel-slot {
+  padding-top: 40px;
+  margin: 16px;
+}
+
+@media (min-width: 1200px) {
+  .carousel-slot {
+    margin: 0 auto;
+
+    max-width: 1200px;
+  }
+}
+</style>

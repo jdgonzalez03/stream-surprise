@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <h1 class="carousel-title">Explora nuestras películas y series recomendadas</h1>
+  <h1 class="carousel-title">Explora nuestras películas y series <span>recomendadas.</span></h1>
 
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <!-- Imágenes dinámicas con v-for -->
@@ -18,10 +18,6 @@ const props = defineProps({
         :class="['carousel-item', { active: index === 0 }]"
       >
         <img :src="item.scr" class="d-block w-100" :alt="item.nombre" loading="lazy" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ item.nombre }}</h5>
-          <p>{{ item.tipo }} - IMDb: {{ item.imdb }}</p>
-        </div>
       </div>
     </div>
 
@@ -49,8 +45,21 @@ const props = defineProps({
 
 <style scoped>
 .carousel-title {
-  margin-bottom: 56px;
+  margin: 0 0 24px;
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
+  color: var(--kuromi-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease-out;
 }
+
+.carousel-title span {
+  color: var(--kuromi-purple);
+  padding-left: 5px;
+  box-shadow: 0 12px 12px -9px var(--kuromi-hover);
+}
+
+/*TODO: Add media Querys for differents sizes screen*/
 </style>
