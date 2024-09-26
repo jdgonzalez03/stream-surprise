@@ -11,7 +11,7 @@
         />
         <h1>Stream<span>Surprise</span></h1>
       </a>
-      <a class="get-movie btn btn-outline-primary" href="#">Get a Movie</a>
+      <a class="get-movie btn btn-outline-primary" href="#select-movie">Get a Movie</a>
     </div>
   </nav>
 </template>
