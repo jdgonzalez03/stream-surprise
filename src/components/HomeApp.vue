@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue'
 import LayoutApp from '@/layouts/LayoutApp.vue'
 import NavBar from './NavBar.vue'
 import CarouselStream from './CarouselStream.vue'
+import SelectMovie from './SelectMovie.vue'
 
 const API_URL = import.meta.env.VITE_APP_API_URL
 const items = ref(null)
@@ -33,7 +34,9 @@ onMounted(() => {
     <template #carousel-img>
       <CarouselStream :items="items" />
     </template>
-    <template #form-random-movie>Mi ruleta y mi formulario</template>
+    <template #select-movie>
+      <SelectMovie :items="items" />
+    </template>
     <template #card-movie-selected>Mi PELICULA/SERIE</template>
     <template #footer>By Juan</template>
   </LayoutApp>
